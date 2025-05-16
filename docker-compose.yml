@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  blue:
+    build: .
+    container_name: blue_app
+    environment:
+      - FEATURE_NEW_API=false
+      - APP_COLOR=BLUE
+    ports:
+      - "5000:5000"
+
+  green:
+    build: .
+    container_name: green_app
+    environment:
+      - FEATURE_NEW_API=true
+      - APP_COLOR=GREEN
+    ports:
+      - "5001:5000"

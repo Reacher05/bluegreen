@@ -19,7 +19,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t reacher05/bluegreen:latest .
+      run: docker build -t rashidkhanks/bluegreen:latest .
 
     - name: Push Docker image
-      run: docker push reacher05/bluegreen:latest
+      run: docker push rashidkhanks/bluegreen:latest

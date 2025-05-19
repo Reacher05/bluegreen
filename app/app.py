@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 import os
-
+# Trigger build for blue version
 app = Flask(__name__)
 
 @app.route("/")

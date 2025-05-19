@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 import os
 # Trigger build for blue version
 app = Flask(__name__)
-
+# Trigger green release
 @app.route("/")
 def home():
     color = os.getenv("APP_COLOR", "DEFAULT")
